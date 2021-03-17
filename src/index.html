@@ -14,7 +14,6 @@
 
   <link rel="apple-touch-icon" href="icon.png">
   <meta name="theme-color" content="#fafafa">
-
 </head>
 
 <body>
@@ -54,23 +53,64 @@
   </section>
 
   <!-- Tests -->
-  <section class="slider-tests">
+  <section class="slider-tests" style="background-image: url('assets/img/shapeSlider.svg');">
     <h2>3 tests adaptés</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac elit ante. Aliquam lectus ex, suscipit at tincidunt in, tempus sit amet dolor. Morbi auctor sed eros in fermentum.</p>
-    <img src="" alt="Tests Tapitap">
+    <div class="slider-touchPad">
+      <img class="touchPad" src="assets/img/tablette.png" alt="Tablette">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="textTests">
+            <h2>Test 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac elit ante.</p>
+          </div>
+          <img class="imgTests" src="assets/img/home.png" alt="Image test 1">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="textTests">
+            <h2>Test 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac elit ante.</p>
+          </div>
+          <img class="imgTests" src="assets/img/home.png" alt="Image test 2">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="textTests">
+            <h2>Test 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac elit ante.</p>
+          </div>
+          <img class="imgTests" src="assets/img/home.png" alt="Image test 3">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
+    
+    <!-- The dots -->
+    <div style="text-align:center">
+      <span class="dot dot-1"></span>
+      <span class="dot dot-2"></span>
+      <span class="dot dot-3"></span>
+    </div>
   </section>
 
   <!-- Stats and patient management -->
   <section class="app-utils">
-    <p>Stats et gestion patients</p>
-    <div class="app-utils__stats">
+    <div class="app-utils__prev">
       <img src="" alt="Page statistiques Tapitap">
-      <h3>Des statistiques</h3>
-      <p>Vestibulum imperdiet placerat mauris eu volutpat. Integer fringilla quam sit amet nulla lobortis, et pretium ex elementum.</p>
+      <div class="app-utils__prev__text">
+        <h3>Des statistiques</h3>
+        <p>Vestibulum imperdiet placerat mauris eu volutpat. Integer fringilla quam sit amet nulla lobortis, et pretium ex elementum.</p>
+      </div>
     </div>
-    <div class="app-utils__patient-management">
-      <h3>Un espace de gestion des patients</h3>
-      <p>Ut eu lacus eu nulla aliquet rutrum ac sed nisi. Mauris tempor maximus erat, id eleifend neque malesuada at.</p>
+    <div class="app-utils__prev">
+      <div  class="app-utils__prev__text">
+        <h3>Un espace de gestion des patients</h3>
+        <p>Ut eu lacus eu nulla aliquet rutrum ac sed nisi. Mauris tempor maximus erat, id eleifend neque malesuada at.</p>
+      </div>
       <img src="" alt="Gestion des patients Tapitap">
     </div>
   </section>
@@ -83,6 +123,7 @@
     </div>
     <p>Mentions légales</p>
   </footer>
+
 </body>
 
 </html>

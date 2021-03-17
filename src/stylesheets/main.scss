@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+$main-purple: #ABA0FF;
+$second-purple: #DEDBFF;
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    .header-text {
+      flex-direction: column;
+      width: 60%;
+    }
+  }
+
+  p {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .app-features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__card{
+     width: 20%;
+     text-align: center;
+    }
+  }
+  
+  .slider-tests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    h2{
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+
+    p {
+      width: 41%;
+      margin-top: 0;
+    }
+
+    .purpleShapeTest {
+      z-index: 0;
+      position: absolute;
+    }
+
+    .slider-touchPad{
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .touchPad{
+      z-index: 1;
+      margin-bottom: 10px;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px 89px 2px;
+      background-color: rgba(243, 233, 255, 0.87);
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      z-index: 10;
+    }
+    
+    .active, .dot:hover {
+      background-color: $main-purple;
+    }
+
+    .slideshow-container {
+      max-width: 1000px;
+      position: absolute;
+      margin: auto;
+      z-index: 10;
+
+      .imgTests{
+        margin-top: 10px;
+        z-index: 10;
+      }
+
+      .mySlides:hover .textTests {
+        opacity : 1
+      }
+
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      .mySlides {
+        display: none;
+        .textTests {
+          height: 96%;
+          width: 100%;
+          position: absolute;
+          margin-top: 8px;
+          background-color: #ffffffb6;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          opacity: 0;
+          transition: opacity 1s;
+        }
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        width: auto;
+        margin-top: 220px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .prev:hover, .next:hover {
+        background-color: $main-purple;
+      }
+    }
+    
+  }
+
+  .app-utils {
+    &__prev {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &__text{
+        flex-direction: column;
+        width: 25%;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
