@@ -58,18 +58,17 @@ body {
           }
         }
       }
-      
-      .header-image {
-        position: relative;
-        width: 60%;
-        img {
-          position: absolute;
-          right: 0;
-          width: 90%;
-        }
-      }
     }
 
+    .header-image {
+      position: relative;
+      width: 60%;
+      img {
+        position: absolute;
+        right: 0;
+        width: 90%;
+      }
+    }
   }
 
   p {
