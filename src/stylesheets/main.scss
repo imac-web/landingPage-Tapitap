@@ -6,14 +6,70 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   
   header {
-    display: flex;
-    flex-direction: row;
+    height: 900px;
+    background-image: url('../assets/img/shapeHome.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .wrapper-header {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      padding: 10rem 0;
+    }
+
     .header-text {
       flex-direction: column;
-      width: 60%;
+      width: 40%;
+      margin-right: 5rem;
+      color: white;
+      h1 {
+        font-size: 46px;
+      }
+      .downloadButton {
+        display: flex;
+        margin-top: 2rem;
+        button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: rgba($color: #FFF, $alpha: 0.8);
+          border-radius: 15px;
+          border: none;
+          padding: .5rem 1rem;
+          cursor: pointer;
+          outline: none;
+          &:first-child {
+            margin-right: 2rem;
+          }
+          img {
+            margin-right: 1rem;
+          }
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+      
+      .header-image {
+        position: relative;
+        width: 60%;
+        img {
+          position: absolute;
+          right: 0;
+          width: 90%;
+        }
+      }
     }
+
   }
 
   p {
@@ -30,7 +86,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    width: 80%;
+    margin: 6rem auto;
     &__card{
      width: 20%;
      text-align: center;
@@ -54,6 +111,8 @@ body {
     p {
       width: 41%;
       margin-top: 0;
+      text-align: center;
+      padding: 2rem;
     }
 
     .purpleShapeTest {
@@ -169,6 +228,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 6rem;
 
     &__prev {
       display: flex;
@@ -179,7 +239,6 @@ body {
       background-size: contain;
       width: 100%;
       height: 400px;
-      width: 101%;
 
       &__text{
         flex-direction: column;
@@ -210,5 +269,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    background-image: url('../assets/img/shapeFooter.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .wrapper-footer {
+      width: 70%;
+      color: white;
+      margin: 3rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
   }
 }
