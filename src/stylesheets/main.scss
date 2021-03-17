@@ -44,7 +44,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-image: url('assets/img/shapeSlider.svg');
+    background-image: url('../assets/img/shapeSlider.svg');
 
     h2{
       margin-top: 100px;
@@ -188,6 +188,7 @@ body {
     }
 
     .stats {
+      background-image: url('../assets/img/shapeStats.svg');
       background-position: left;
 
       img {
@@ -196,6 +197,7 @@ body {
     }
 
     .managPatient {
+      background-image: url('../assets/img/shapeManagPatient.svg');
       background-position: right;
 
       img {
