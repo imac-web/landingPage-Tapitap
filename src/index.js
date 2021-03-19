@@ -8,3 +8,6 @@ import 'aos/dist/aos.css';
 slider()
 
 AOS.init();
+
+// buttons redirection
+document.querySelectorAll('.downloadButton button').forEach( button => button.addEventListener('click', () => window.open('https://tapitap.netlify.app/', '_blank')))
