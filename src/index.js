@@ -5,9 +5,15 @@ import { slider } from './scripts/slider'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-slider()
+window.onload = function() {
+    AOS.init({
+        duration: 1500,
+        once: true
+    });
+    window.addEventListener('load', AOS.refresh);
 
-AOS.init();
+    slider()
+}
 
 // buttons redirection
-document.querySelectorAll('.downloadButton button').forEach( button => button.addEventListener('click', () => window.open('https://tapitap.netlify.app/', '_blank')))
+document.querySelectorAll('.downloadButton button').forEach(button => button.addEventListener('click', () => window.open('https://tapitap.netlify.app/', '_blank')))
