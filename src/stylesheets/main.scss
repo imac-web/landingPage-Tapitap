@@ -82,16 +82,22 @@ body {
           display: flex;
           flex-direction: row;
           align-items: center;
-          background-color: rgba($color: #FFF, $alpha: 0.8);
+          background-color:  rgb(245, 245, 245);
           border-radius: 15px;
           border: none;
           padding: .5rem 1rem;
+          box-sizing: border-box;
+          transition: all .3s ease;
+          cursor: pointer;
+          outline: none;
+          &:hover {
+            background-color: white;
+            transform: scale(1.05);
+          }
           @media (max-width: 780px){
             margin-bottom: 16px;
             width: 51%;
           }
-          cursor: pointer;
-          outline: none;
           &:first-child {
             margin-right: 2rem;
             @media (max-width: 780px){
