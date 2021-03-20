@@ -13,12 +13,16 @@ body {
   height: 100%;
   overflow: auto;
   color: $grey;
+  overflow-X: hidden;
   
   header {
     height: 900px;
     background-image: url('../assets/img/shapeHome.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    @media (max-width: 490px) {
+      height: 770px;
+    }
 
     .wrapper-header {
       width: 70%;
@@ -26,18 +30,54 @@ body {
       display: flex;
       flex-direction: row;
       padding: 10rem 0;
+      @media (max-width: 1100px) {
+        padding: 3rem 0;
+        justify-content: center;
+        text-align: center;
+      }
+      @media (max-width: 830px) {
+        width: 75%;
+        padding: 1rem 0;
+      }
+      @media (max-width: 730px) {
+        padding: 0;
+      }
+      @media (max-width: 490px) {
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+      }
     }
 
     .header-text {
       flex-direction: column;
       width: 40%;
       margin-right: 5rem;
+      @media (max-width: 1100px) {
+        width: 58%;
+        margin-right: 0rem;
+      }
+      @media (max-width: 780px) {
+        width: 72%;
+        margin-right: 0rem;
+      }
+      @media (max-width: 620px) {
+        width: 90%;
+      }
+      @media (max-width: 490px) {
+        width: 100%;
+      }
       h1 {
         font-size: 46px;
       }
       .downloadButton {
         display: flex;
         margin-top: 2rem;
+        @media (max-width: 780px) {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+        }
         button {
           display: flex;
           flex-direction: row;
@@ -46,10 +86,17 @@ body {
           border-radius: 15px;
           border: none;
           padding: .5rem 1rem;
+          @media (max-width: 780px){
+            margin-bottom: 16px;
+            width: 51%;
+          }
           cursor: pointer;
           outline: none;
           &:first-child {
             margin-right: 2rem;
+            @media (max-width: 780px){
+              margin-right: 0rem;
+            }
           }
           img {
             margin-right: 1rem;
@@ -64,10 +111,31 @@ body {
     .header-image {
       position: relative;
       width: 60%;
+      @media (max-width: 1100px) {
+        position: absolute;
+        top: 450px;
+        right: 35%;
+      }
+      @media (max-width: 970px) {
+        top: 504px;
+      }
+      @media (max-width: 650px) {
+        top: 535px;
+      }
+      @media (max-width: 490px) {
+        display: none;
+      }
       img {
         position: absolute;
         right: 0;
         width: 90%;
+        @media (max-width: 1100px) {
+          width: 55%;
+        }
+        @media (max-width: 750px) {
+          width: 65%;
+          right: -6%;
+        }
       }
     }
   }
@@ -88,9 +156,22 @@ body {
     justify-content: space-around;
     width: 80%;
     margin: 6rem auto;
+    @media (max-width: 1100px) {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
     &__card{
-     width: 20%;
-     text-align: center;
+      width: 20%;
+      text-align: center;
+      @media (max-width: 1100px) {
+        width: 230px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 10px;
+      }
+      @media (max-width: 700px) {
+        margin-top: 30px;
+      }
     }
   }
   
