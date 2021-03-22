@@ -165,6 +165,7 @@ body {
     @media (max-width: 1100px) {
       flex-flow: row wrap;
       justify-content: center;
+      margin: 1rem auto;
     }
     &__card{
       width: 20%;
@@ -186,13 +187,22 @@ body {
     flex-direction: column;
     align-items: center;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     background-size: contain;
     background-image: url('../assets/img/shapeSlider.svg');
+    @media (max-width: 548px) {
+      background-size: cover;
+    }
 
     h2{
       margin-top: 100px;
       margin-bottom: 0;
+      @media(max-width: 1100px){
+        margin-top: 48px;
+      }
+      @media(max-width: 548px){
+        font-size: 1.5em;
+      }
     }
 
     p {
@@ -200,6 +210,17 @@ body {
       margin-top: 0;
       text-align: center;
       padding: 2rem;
+      @media(max-width: 1100px){
+        padding: 1rem;
+      }
+      @media(max-width: 852px){
+        width: 51%;
+        margin-bottom: 0;
+      }
+      @media(max-width: 548px){
+        width: 67%;
+        font-size: 0.9em;
+      }
     }
 
     .purpleShapeTest {
@@ -216,6 +237,19 @@ body {
     .touchPad{
       z-index: 1;
       margin-bottom: 10px;
+      @media(max-width: 852px){
+        width: 676px;
+        margin-top: 3px;
+      }
+      @media(max-width: 716px){
+        width: 515px;
+      }
+      @media(max-width: 548px){
+        width: 390px;
+      }
+      @media(max-width: 424px){
+        width: 361px;
+      }
     }
 
     .dot {
@@ -243,6 +277,19 @@ body {
       .imgTests{
         margin-top: 10px;
         z-index: 10;
+        @media(max-width: 852px){
+          width: 578px;
+        }
+        @media(max-width: 716px){
+          width: 439px;
+        }
+        @media(max-width: 548px){
+          width: 334px;
+          margin-top: 7px;
+        }
+        @media(max-width: 424px){
+          width: 310px;
+        }
       }
 
       .mySlides:hover .textTests {
@@ -257,12 +304,12 @@ body {
       }
       
       @-webkit-keyframes fade {
-        from {opacity: .4}
+        from {opacity: .6}
         to {opacity: 1}
       }
       
       @keyframes fade {
-        from {opacity: .4}
+        from {opacity: .6}
         to {opacity: 1}
       }
 
@@ -280,6 +327,30 @@ body {
           text-align: center;
           opacity: 0;
           transition: opacity 1s;
+          @media(max-width: 548px){
+            height: 94%;
+          }
+          h2 {
+            @media(max-width: 716px){
+              margin-top: 40px;
+              font-size: 1.5em;
+            }
+            @media(max-width: 548px){
+              margin-top: 20px;
+              font-size: 1.4em;
+            }
+            @media(max-width: 424px){
+              margin-top: 10px;
+            }
+          }
+          p {
+            @media(max-width: 716px){
+              width: 78%;
+            }
+            @media(max-width: 716px){
+              font-size: 0.8em;
+            }
+          }
         }
       }
 
@@ -296,6 +367,20 @@ body {
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        @media(max-width: 852px){
+          margin-top: 192px;
+        }
+        @media(max-width: 716px){
+          margin-top: 138px;
+        }
+        @media(max-width: 548px){
+          margin-top: 107px;
+          padding: 6px;
+        }
+        @media(max-width: 424px){
+         margin-top: 102px;
+         padding: 5px;
+        }
       }
 
       .next {
