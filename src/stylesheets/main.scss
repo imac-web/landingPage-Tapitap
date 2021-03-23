@@ -277,6 +277,7 @@ body {
       .imgTests{
         margin-top: 10px;
         z-index: 10;
+        width: 664px;
         @media(max-width: 852px){
           width: 578px;
         }
@@ -424,6 +425,7 @@ body {
         flex-direction: column;
       }
       img {
+        width: 35%;
         @media(max-width: 790px){
           width: 51%;
         }
