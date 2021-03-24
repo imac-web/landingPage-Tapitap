@@ -16,4 +16,4 @@ window.onload = function() {
 }
 
 // buttons redirection
-document.querySelectorAll('.downloadButton button').forEach(button => button.addEventListener('click', () => window.open('https://app-mobilite-test.web.app/', '_blank')))
+document.querySelectorAll('.downloadButton button').forEach(button => button.addEventListener('click', () => window.open('https://tapitap-app.netlify.app/', '_blank')))
